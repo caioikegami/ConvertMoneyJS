@@ -13,15 +13,31 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #8a51fc;
+    height: 100vh;
 }
 
 main{
     width: 375px;
-    margin: 0px auto 20px auto;
     background-color: #f4f4f4;
     border-radius: 20px;
-    padding: 44px 24px 23px; 
+    padding: 23px 24px 23px; 
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+h1{
+    color: #777777;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 label {
