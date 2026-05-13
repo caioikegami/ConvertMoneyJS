@@ -10,6 +10,7 @@ async function convertValues() {
 
     const dolar = data.USDBRL.high
     const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high
     const libra = data.GBPBRL.high
     const iene = data.JPYBRL.high
     const yuan = data.CNYBRL.high
@@ -26,6 +27,13 @@ async function convertValues() {
             style: 'currency',
             currency: 'EUR'
         }).format(inputCurrencyValue / euro)
+    }
+
+    if (currencySelect.value == 'Bitcoin') {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'BTC'
+        }).format(inputCurrencyValue / bitcoin)
     }
 
     if (currencySelect.value == 'libra') {
@@ -68,6 +76,11 @@ function changeCurrency() {
     if (currencySelect.value == 'euro') {
         currencyName.innerHTML = 'Euro'
         currencyImage.src = './assets/euro.png'
+    }
+
+    if (currencySelect.value == 'Bitcoin') {
+        currencyName.innerHTML = 'Bitcoin'
+        currencyImage.src = './assets/bitcoin.png'
     }
 
     if (currencySelect.value == 'libra') {
