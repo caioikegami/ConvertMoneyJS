@@ -1,18 +1,18 @@
 * {
-     font-family: "Roboto", sans-serif;
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-     outline: none;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
-.logo{
+.logo {
     width: 300px;
     display: block;
     margin: 20px auto;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,21 +20,21 @@ body{
     height: 100vh;
 }
 
-main{
+main {
     width: 375px;
     background-color: #f4f4f4;
     border-radius: 20px;
-    padding: 23px 24px 23px; 
+    padding: 23px 24px 23px;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
 
-h1{
+h1 {
     color: #777777;
     font-weight: 700;
     font-size: 24px;
@@ -46,13 +46,14 @@ label {
     font-size: 14px;
 }
 
-select, input {
+select,
+input {
     background: #ffffff;
     border: 1px solid #bbbbbb;
     border-radius: 4px;
     height: 48px;
-    width: 100%;   
-    margin-bottom: 24px; 
+    width: 100%;
+    margin-bottom: 24px;
     appearance: none;
     padding-left: 18px;
     font-weight: 700;
@@ -94,8 +95,17 @@ section {
     align-items: center;
 }
 
-.arrow-img {
-   margin: 15px 0px; 
+#swap-button {
+    width: 50px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+#swap-button:hover {
+    transform: scale(1.1) rotate(180deg);
+    opacity: 0.8;
 }
 
 .currency-box {
@@ -110,7 +120,8 @@ section {
     font-size: 14px;
 }
 
-.currency-value, .currency-value-to-convert {
+.currency-value,
+.currency-value-to-convert {
     color: #555555;
     font-size: 20px;
     font-weight: 700;
